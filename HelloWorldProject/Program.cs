@@ -1,6 +1,7 @@
 ﻿//Two forward slashes to add note in Visual Studios
 // = an assignment, take the value on the right and use it on the left    
 // == a check for equality, to see if the two things are equal  
+//
 
 using System;
 
