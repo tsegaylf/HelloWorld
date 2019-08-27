@@ -27,6 +27,46 @@ namespace HelloWorldProject {
             Console.WriteLine(instructor);
             string lastname = "Doud";
             Console.WriteLine(instructor + " " + lastname); // + sign is a way to put two strings together [like cacat() in SQL]
+
+            //Looping
+            var ints = new int[] { 1, 2, 3, 4, 5 };
+            var total = 0;
+            var index = 0;
+            //Looping with while()
+            while (index < 5) {
+                total = total + (ints[index] * ints[index]);
+                index = index + 1;
+            }
+            Console.WriteLine("Total is " + total);
+
+            //Looping with for()
+            total = 0;
+            for (var idx = 0; idx < 5; idx = idx + 1) {
+                total = total + (ints[idx] * ints[idx]); }
+            Console.WriteLine("Total is " + total);
+
+            //Assignment --- compute the average
+            var scores = new int[] { 738, 609, 307, 959, 805, 689, 402, 972, 359, 140 };
+            var tot = 0;
+            for (var idx = 0; idx < 10; idx++) 
+                { tot = tot + scores[idx];
+            }
+            var avg = tot / 10;
+            Console.WriteLine("Average is " + avg);
+
+            //looping with foreach()
+            var grandtotal = 0;
+            foreach(var score in scores) {
+                grandtotal += score;
+            }
+            avg = grandtotal / 10;
+            Console.WriteLine("Grandtotal " + grandtotal);
+            Console.WriteLine("Avg " + avg);
+            
         }
+
+
     }
-}
+    }
+
+
