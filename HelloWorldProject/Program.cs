@@ -7,7 +7,7 @@ using System;
 
 namespace HelloWorldProject {
     class Program {
-
+        
         static void Main(string[] args)
         {
             Console.WriteLine("Hello C# Boot Camp World!");
@@ -62,11 +62,37 @@ namespace HelloWorldProject {
             avg = grandtotal / 10;
             Console.WriteLine("Grandtotal " + grandtotal);
             Console.WriteLine("Avg " + avg);
-            
+
+            //Floting point numbers 
+            var totalDistance = 0.0;
+            var distances = new double[] {5.99, 3.56, 8.99, 7.47, 8.17, 6.78, 6.33};
+            foreach(var distance in distances) {
+                totalDistance += distance;
+            }
+            var avgdistance = totalDistance / distances.Length;
+            Console.WriteLine("Avg is " + totalDistance / distances.Length);
+
+            //Arrays 
+            int[] students = new int[5];
+            students[0] = 7;
+            students[1] = 3;
+            students[2] = 4;
+            students[3] = 15;
+            students[4] = 5;
+
+            string[] names = new string[7];
+            names[0] = "Jeremy";
+            names[1] = "Justin";
+            names[2] = "Alex";
+            names[3] = "Nick";
+            names[4] = "Phill";
+            names[5] = "Tricia";
+            names[6] = "Lidya";
         }
 
 
     }
     }
+
 
 
